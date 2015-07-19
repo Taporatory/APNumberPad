@@ -44,9 +44,13 @@ static inline UIColor * APNP_RGBa(int r, int g, int b, CGFloat alpha) {
 + (UIColor *)numberButtonBackgroundColor {
     return APNP_RGBa(252, 252, 252, 1.f);
 }
-
 + (UIColor *)numberButtonHighlightedColor {
+
     return APNP_RGBa(188, 192, 198, 1.f);
+}
+
++ (UIColor *)numberButtonHighlightedTextColor {
+    return [[self class] numberButtonTextColor];
 }
 
 #pragma mark - Function button
@@ -67,9 +71,12 @@ static inline UIColor * APNP_RGBa(int r, int g, int b, CGFloat alpha) {
     return APNP_RGBa(252, 252, 252, 1.f);
 }
 
++ (UIColor *)functionButtonHighlightedTextColor {
+    return [[self class] functionButtonTextColor];
+}
+
 + (UIImage *)clearFunctionButtonImage {
     return [UIImage imageNamed:@"APNumberPad.bundle/images/apnumberpad_backspace_icon.png"];
 }
-
 
 @end

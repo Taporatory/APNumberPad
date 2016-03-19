@@ -90,6 +90,7 @@
         self.leftButton = [self functionButton];
         self.leftButton.titleLabel.font = [self.styleClass functionButtonFont];
         [self.leftButton setTitleColor:[self.styleClass functionButtonTextColor] forState:UIControlStateNormal];
+        [self.leftButton setTitleColor:[self.styleClass functionButtonHighlightedTextColor] forState:UIControlStateHighlighted];
         [self.leftButton addTarget:self action:@selector(functionButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.leftButton];
         
@@ -452,6 +453,7 @@
     APNumberButton *b = [APNumberButton buttonWithBackgroundColor:[self.styleClass numberButtonBackgroundColor]
                                                  highlightedColor:[self.styleClass numberButtonHighlightedColor]];
     [b setTitleColor:[self.styleClass numberButtonTextColor] forState:UIControlStateNormal];
+    [b setTitleColor:[self.styleClass numberButtonHighlightedTextColor] forState:UIControlStateHighlighted];
     b.titleLabel.font = [self.styleClass numberButtonFont];
     [b setTitle:[NSString stringWithFormat:@"%d", number] forState:UIControlStateNormal];
     return b;

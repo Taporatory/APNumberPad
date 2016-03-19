@@ -17,11 +17,13 @@
 + (UIColor *)numberButtonBackgroundColor;
 + (UIColor *)numberButtonHighlightedColor;
 + (UIColor *)numberButtonTextColor;
++ (UIColor *)numberButtonHighlightedTextColor;
 
 + (UIFont *)functionButtonFont;
 + (UIColor *)functionButtonBackgroundColor;
 + (UIColor *)functionButtonHighlightedColor;
 + (UIColor *)functionButtonTextColor;
++ (UIColor *)functionButtonHighlightedTextColor;
 + (UIImage *)clearFunctionButtonImage;
 
 @end
